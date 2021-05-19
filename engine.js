@@ -5,7 +5,7 @@ function whenIsMybDay(){
                     var $result = document.querySelector("#result");
                     var $body = document.querySelector("body");
                     
-                    if(!isNaN($day.value) && !isNaN($month.value) && $day.value<=31 && $month.value<=12 && $day.value !== "" && $month.value !== ""){
+                    if(!isNaN($day.value) && !isNaN($month.value) && $day.value<=31 && $month.value<=12 && $day.value !== "" && $month.value !== "" && $day.value > 0 && $month.value>0){
 
                       var dataAtual = new Date();
                       dataAtual.setHours(0);
