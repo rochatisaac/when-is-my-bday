@@ -7,7 +7,7 @@ function whenIsMybDay(){
                     var test = $day.value+$month.value;
                    
                     
-                    if(!isNaN($day.value) && !isNaN($month.value) && !isNaN(test)){
+                    if(!isNaN($day.value) && !isNaN($month.value) && !isNaN(test) && $day.value<=31 && $month.value<=12){
 
                       var dataAtual = new Date();
                       dataAtual.setHours(0);
