@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+
+    <title>🎂️ bDay Calculator</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Isaac">
+    <meta name="description" content="Atividade">
+    <meta name="keywords" content="html5, tecnologia">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="#">
+    <script src="engine.js"></script>
+    <link rel="stylesheet" href="index.css">
+
+    <script>
+        (function(){
+            "use strict";
+            window.addEventListener("load",init);
+            function init(){
+
+                const $bDay= document.querySelector("#bDay");
+                var $day = document.querySelector("#day");
+                var $month = document.querySelector("#month");
+                var $result = document.querySelector("#result");
+                $day.focus();
+                $day.value= "";
+                $month.value= "";
+                
+                $bDay.addEventListener("click", whenIsMybDay);
+                
+            }
+        })();
+    </script>
+
+    
+  </head>
+  
+  <body>
+    
+    <h1>bDay Calculator</h1>
+    <p>Será que vai ter bolo?</p>
+    <div id="data">
+      <label for="day">Dia do seu aniverśario</label> 
+      <input id="day" type="text" placeholder="Apenas números" maxlength="2" size="5">
+      <label for="month">Mês do seu aniversário</label>
+      <input id="month" type="text" placeholder="Apenas números" maxlength="2" size="5">
+      <input id="bDay" type="button" value="Quanto falta para meu pŕoximo aniversário?">
+    </div>
+
+    <div id="result"></div>
+
+    
+
+
+    
+  </body>
+
+</html>

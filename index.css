@@ -1,0 +1,31 @@
+body{
+  text-align:center;
+  background-color: royalblue;
+  color:white;
+}
+input{
+  text-align:center;
+  margin:10px;
+}
+#data{
+  display:grid;
+  grid-template-rows:3;
+  padding:15px 500px;
+  text-align: center;
+}
+
+@keyframes transition{
+            0%{
+                background:yellow;
+            }
+            50%{
+                background:orange;
+            }
+            80%{
+                background:green;
+            }
+
+            100%{
+                background:blue;
+            }  
+        }     
