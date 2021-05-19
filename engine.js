@@ -4,10 +4,8 @@ function whenIsMybDay(){
                     var $month = document.querySelector("#month");
                     var $result = document.querySelector("#result");
                     var $body = document.querySelector("body");
-                    var test = $day.value+$month.value;
-                   
                     
-                    if(!isNaN($day.value) && !isNaN($month.value) && !isNaN(test) && $day.value<=31 && $month.value<=12){
+                    if(!isNaN($day.value) && !isNaN($month.value) && $day.value<=31 && $month.value<=12 && $day.value !== "" && $month.value !== ""){
 
                       var dataAtual = new Date();
                       dataAtual.setHours(0);
@@ -35,9 +33,10 @@ function whenIsMybDay(){
                       
                           $result.innerHTML = "Faltam " + (dataNiverTS - dataAtualTS)/UM_DIA_TS + " dias para o seu aniversário!";
                           $result.style.fontSize= "30px";
-                      
-                    } else{
+    
+                    }else{
                       alert("Dia ou mês inválido");
+                      return
                     }
 
               
