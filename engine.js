@@ -33,7 +33,8 @@ function whenIsMybDay(){
                       
                           $result.innerHTML = "Faltam " + (dataNiverTS - dataAtualTS)/UM_DIA_TS + " dias para o seu aniversário!";
                           $result.style.fontSize= "30px";
-    
+                          $body.style.animation= "none"
+                          return
                     }else{
                       alert("Dia ou mês inválido");
                       return
